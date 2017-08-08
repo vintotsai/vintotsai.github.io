@@ -219,9 +219,10 @@ HTML5？
 	  详细请参考：[有趣的HTML5：离线存储](http://segmentfault.com/a/1190000000732617)
 
 - 请描述一下 cookies，sessionStorage 和 localStorage 的区别？
+
 		存储位置：
-			cookie是网站为了标示用户身份而储存在用户本地终端（Client Side）上的数据（通常经过加密）。
-			cookie数据始终在同源的http请求中携带（即使不需要），会在浏览器和服务器之间来回传递。（eg: req.cookies.xxx）
+				cookie是网站为了标示用户身份而储存在用户本地终端（Client Side）上的数据（通常经过加密）。
+			cookie数据始终在同源的http请求中携带（即使不需要），会在浏览器和服务器之间来回传递。（eg: req.cookies.xxx）。
 			sessionStorage和localStorage不会自动把数据发给服务器，仅在本地保存。
 
 		存储大小：
