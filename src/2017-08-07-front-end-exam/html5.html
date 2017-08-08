@@ -1,12 +1,17 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <title></title>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!-- <link href="css/style.css" rel="stylesheet"> -->
-  </head>
-  <body>
+<html lang="en" manifest="index.manifest">
+
+<head>
+  <title></title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- <link href="css/style.css" rel="stylesheet"> -->
+  <!--[if lt IE 9]>
+  <script> src="http://html5shim.googlecode.com/svn/trunk/html5.js"</script>
+  <![endif]-->
+</head>
+
+<body>
   <canvas id="can">canvas</canvas>
   <p>html5:article、footer、header、nav、section</p>
   <header>
@@ -22,7 +27,8 @@
     var canvas = document.getElementById('can')
     var context = canvas.getContext('2d')
     context.fillStyle = 'red'
-    context.fillRect(0,0,80,100)
+    context.fillRect(0, 0, 80, 100)
   </script>
-  </body>
+</body>
+
 </html>

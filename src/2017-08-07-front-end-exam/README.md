@@ -216,19 +216,19 @@ HTML5？
 
 		在线的情况下，浏览器发现html头部有manifest属性，它会请求manifest文件，如果是第一次访问app，那么浏览器就会根据manifest文件的内容下载相应的资源并且进行离线存储。如果已经访问过app并且资源已经离线存储了，那么浏览器就会使用离线的资源加载页面，然后浏览器会对比新的manifest文件与旧的manifest文件，如果文件没有发生改变，就不做任何操作，如果文件改变了，那么就会重新下载文件中的资源并进行离线存储。
 		离线的情况下，浏览器就直接使用离线存储的资源。
-	详细请参考：[有趣的HTML5：离线存储](http://segmentfault.com/a/1190000000732617)
+	  详细请参考：[有趣的HTML5：离线存储](http://segmentfault.com/a/1190000000732617)
 
 - 请描述一下 cookies，sessionStorage 和 localStorage 的区别？
 
 		cookie是网站为了标示用户身份而储存在用户本地终端（Client Side）上的数据（通常经过加密）。
-		cookie数据始终在同源的http请求中携带（即使不需要），记会在浏览器和服务器间来回传递。
+		cookie数据始终在同源的http请求中携带（即使不需要），会在浏览器和服务器之间来回传递。（eg: req.cookies.xxx）
 		sessionStorage和localStorage不会自动把数据发给服务器，仅在本地保存。
 
 		存储大小：
 			cookie数据大小不能超过4k。
 			sessionStorage和localStorage 虽然也有存储大小的限制，但比cookie大得多，可以达到5M或更大。
 
-		有期时间：
+		有效时间：
 	    	localStorage    存储持久数据，浏览器关闭后数据不丢失除非主动删除数据；
         	sessionStorage  数据在当前浏览器窗口关闭后自动删除。
 			cookie          设置的cookie过期时间之前一直有效，即使窗口或浏览器关闭
