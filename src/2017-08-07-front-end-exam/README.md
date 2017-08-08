@@ -323,7 +323,8 @@ HTML5？
 
 - CSS选择符有哪些？哪些属性可以继承？
 
-		*   1.id选择器（ # myid）
+		*   
+			1.id选择器（#myid）
 			2.类选择器（.myclassname）
 			3.标签选择器（div, h1, p）
 			4.相邻选择器（h1 + p）
@@ -354,13 +355,13 @@ HTML5？
 			举例：
 			p:first-of-type	选择属于其父元素的首个 <p> 元素的每个 <p> 元素。
 			p:last-of-type	选择属于其父元素的最后 <p> 元素的每个 <p> 元素。
-	        p:only-of-type	选择属于其父元素唯一的 <p> 元素的每个 <p> 元素。
+	    p:only-of-type	选择属于其父元素唯一的 <p> 元素的每个 <p> 元素。
 			p:only-child		选择属于其父元素的唯一子元素的每个 <p> 元素。
 			p:nth-child(2)	选择属于其父元素的第二个子元素的每个 <p> 元素。
 
 			::after			在元素之前添加内容,也可以用来做清除浮动。
 			::before			在元素之后添加内容
-	 	    :enabled  		
+	 	  :enabled  		
 			:disabled 		控制表单控件的禁用状态。
 			:checked        单选框或复选框被选中。
 
