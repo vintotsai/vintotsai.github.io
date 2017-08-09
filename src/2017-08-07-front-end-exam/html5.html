@@ -4,22 +4,29 @@
 <head>
   <title></title>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <!-- <link href="css/style.css" rel="stylesheet"> -->
+  <!-- <meta name="viewport" content="width=device-width, initial-scale=1"> -->
+  <link href="css/style.css" rel="stylesheet">
+  <link href="css/init.css" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no"/> 
   <!--[if lt IE 9]>
   <script> src="http://html5shim.googlecode.com/svn/trunk/html5.js"</script>
   <![endif]-->
 </head>
 
 <body>
-  <div id="mydiv" style="width:50px;height:50px;background-color:red;border-radius:50%"></div>
+  <div id="mydiv" style="width:50px;height:50px;background-color:red;border-radius:50%;margin:0 auto;"></div>
   <hr style="background-color:red;">
-  <div style="height:1px;overflow:hidden;background:red;transform:rotate(90deg)"></div>
+  <div style="height:1px;overflow:hidden;background:red;transform:rotate(90deg);z-index:999;"></div>
+  <div class="abs">div absolute</div>
+  <!-- <div class="abs-rel">div absolute/relative</div> -->
+  <div class="mid3">div</div>
   <div>
     <canvas id="can">canvas</canvas>
   </div>
   <div>
-    <p>hello,<del>world</del></p>
+    <p>hello,
+      <del>world</del>
+    </p>
   </div>
   <p>html5:article、footer、header、nav、section</p>
   <header>
@@ -31,6 +38,17 @@
   <footer>
     footer
   </footer>
+  <div class="container">
+    <div class="item">div item</div>
+    <div class="item">div item</div>
+    <div class="item">div item</div>
+  </div>
+  <div class="clearfix">
+    <div style="width:100%;background:yellow;">div1</div>
+    <div style="width:50%;background:blue;float:left;">div2</div>
+    <div style="width:50%;background:blue;float:left;">div3</div>
+  </div>
+  <p>pppp</p>
   <script>
     var canvas = document.getElementById('can')
     var context = canvas.getContext('2d')
@@ -41,7 +59,24 @@
       alert('totsai')
 
     })
-  </script>
+</script>
+/* li节点的onclick事件都能正确的弹出当前被点击的li索引*/
+		 <ul id="testUL">
+	        <li> index = 0</li>
+	        <li> index = 1</li>
+	        <li> index = 2</li>
+	        <li> index = 3</li>
+	    </ul>
+		<script type="text/javascript">
+		  	var nodes = document.getElementsByTagName("li");
+			for(i = 0;i<nodes.length;i+= 1){
+			    nodes[i].onclick = (function(i){
+			              return function() {
+			                 console.log(i);
+			              } //不用闭包的话，值每次都是4
+			            })(i);
+			}
+		</script>
 </body>
 
 </html>
