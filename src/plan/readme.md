@@ -1,4 +1,4 @@
-webpack2
+webpack
 stylus
 pug
 elementUI
