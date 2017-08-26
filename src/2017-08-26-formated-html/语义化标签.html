@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>html</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- <link href="css/style.css" rel="stylesheet"> -->
+</head>
+
+<body>
+  <!-- The page header should go into a header element -->
+  <header>
+    <!-- As this title belongs to the page structure it's a heading and h1 should be used -->
+    <h1>My page title</h1>
+  </header>
+
+  <!-- All navigation should go into a nav element -->
+  <nav class="top-navigation">
+    <!-- A listing of elements should always go to UL (OL for ordered listings) -->
+    <ul>
+      <li class="nav-item"><a href="#home">Home</a></li>
+      <li class="nav-item"><a href="#news">News</a></li>
+      <li class="nav-item"><a href="#about">About</a></li>
+    </ul>
+  </nav>
+
+  <!-- The main part of the page should go into a main element (also use role="main" for accessibility) -->
+  <main class="news-page" role="main">
+    <!-- A section of a page should go into a section element. Divide a page into sections with semantic elements. -->
+    <section class="page-section news">
+      <!-- A section header should go into a section element -->
+      <header>
+        <!-- As a page section belongs to the page structure heading elements should be used (in this case h2) -->
+        <h2 class="title">All news articles</h2>
+      </header>
+
+      <!-- If a section / module can be seen as an article (news article, blog entry, products teaser, any other
+     re-usable module / section that can occur multiple times on a page) a article element should be used -->
+      <article class="news-article">
+        <!-- An article can contain a header that contains the summary / introduction information of the article -->
+        <header>
+          <!-- As a article title does not belong to the overall page structure there should not be any heading tag! -->
+          <div class="article-title">Good article</div>
+          <!-- Small can optionally be used to reduce importance -->
+          <small class="intro">Introduction sub-title</small>
+        </header>
+
+        <!-- For the main content in a section or article there is no semantic element -->
+        <div class="content">
+          <p>This is a good example for HTML semantics</p>
+        </div>
+        <!-- For content that is represented as side note or less important information in a given context use aside -->
+        <aside class="article-side-notes">
+          <p>I think I'm more on the side and should not receive the main credits</p>
+        </aside>
+        <!-- Articles can also contain footers. If you have footnotes for an article place them into a footer element -->
+        <footer class="article-foot-notes">
+          <!-- The time element can be used to annotate a timestamp. Use the datetime attribute to specify ISO time
+         while the actual text in the time element can also be more human readable / relative -->
+          <p>This article was created by David
+            <time datetime="2014-01-01 00:00" class="time">1 month ago</time>
+          </p>
+        </footer>
+      </article>
+
+      <!-- In a section, footnotes or similar information can also go into a footer element -->
+      <footer class="section-footer">
+        <p>Related sections: Events, Public holidays</p>
+      </footer>
+    </section>
+  </main>
+
+  <!-- Your page footer should go into a global footer element -->
+  <footer class="page-footer">
+    Copyright 2014
+  </footer>
+</body>
+
+</html>
