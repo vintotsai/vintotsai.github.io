@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title></title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- <link href="css/style.css" rel="stylesheet"> -->
+  </head>
+  <body>
+    <main>
+      <ol>
+        <li>总是将代码包裹成一个 IIFE</li>
+      </ol>
+    </main>
+    <script>
+      (function(log, w, undefined){
+        'use strict';
+        let a = 100,b = 200;
+        log(window.a === undefined,w.b === 200)
+      })(window.console.log, window)
+    </script>
+  </body>
+</html>
