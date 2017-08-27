@@ -8,17 +8,27 @@
   <script src="./vue.js"></script>
   <!-- <link href="css/style.css" rel="stylesheet"> -->
 </head>
+
 <body>
   <div id="demo">
     {{ cat }}
+    <ol>
+      <!-- Create an instance of the todo-item component -->
+      <!-- <todo-item></todo-item> -->
+    </ol>
   </div>
 </body>
 <script defer>
+  console.log(Vue)
   var app = new Vue({
     el: '#demo',
     data: {
       cat: 'meow~'
-    }
+    },
+  })
+
+  Vue.component('todo-item', {
+    template: '<li>This is a todo</li>'
   })
 </script>
 
