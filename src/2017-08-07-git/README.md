@@ -8,4 +8,8 @@
 
 - git log -p [filename] 查看某个文件的所有详细提交日志改动
 
-- 
+- git log -S ‘PATTERN’
+
+　　例如，搜索修改符合stupid的历史：
+
+　　> git log -S'stupid'
