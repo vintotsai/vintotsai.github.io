@@ -1,9 +1,5 @@
-<p align="center">
-    <img src="./src/images/logo-3.png" width="360px">
-</p>
-
-<h1 align="center">Easy Vue</h1>
-
+<p align="center"><img src="../../static/img/shuttle.gif" width="360px"></p>
+<h1 align="center">html in markdown</h1>
 <p align="center">
 <a href="http://vue.tigerb.cn/#/"><img src="https://img.shields.io/badge/build-passing-brightgreen.svg" alt="Build Status"></a>
 <a href="https://github.com/TIGERB/easy-vue/releases"><img src="https://img.shields.io/badge/version-0.7.1-lightgrey.svg" alt="Version"></a>
