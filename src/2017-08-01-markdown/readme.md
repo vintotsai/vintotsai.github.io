@@ -1,3 +1,16 @@
+<p align="center">
+    <img src="./src/images/logo-3.png" width="360px">
+</p>
+
+<h1 align="center">Easy Vue</h1>
+
+<p align="center">
+<a href="http://vue.tigerb.cn/#/"><img src="https://img.shields.io/badge/build-passing-brightgreen.svg" alt="Build Status"></a>
+<a href="https://github.com/TIGERB/easy-vue/releases"><img src="https://img.shields.io/badge/version-0.7.1-lightgrey.svg" alt="Version"></a>
+<a href="https://github.com/TIGERB/easy-vue/releases"><img src="https://img.shields.io/badge/download-400kb-yellow.svg" alt="Downloads"></a>
+<a href="https://opensource.org/licenses/MIT"><img src="https://img.shields.io/badge/license-MIT-blue.svg" alt="License"></a>
+</p>
+
 ## 主要内容
 > #### Markdown是什么
 > #### 是谁发明de
