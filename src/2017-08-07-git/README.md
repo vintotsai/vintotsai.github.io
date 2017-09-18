@@ -13,3 +13,11 @@
 　　例如，搜索修改符合stupid的历史：
 
 　　> git log -S'stupid'
+
+- git rm -–cached FILE
+
+　　这个命令只删除远程文件，例如：
+
+　　> git rm --cached database.yml
+
+　　删除database.yml被保存的记录，但是不影响本地文件。这对删除已经推送过的忽略文件记录而且不影响本地文件是非常的方便的。
