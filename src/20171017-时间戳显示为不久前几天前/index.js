@@ -67,3 +67,5 @@ var dateDiff = function (timestamp) {
   }
   return '刚刚';
 };
+
+console.log(dateDiff(1508203346840))
