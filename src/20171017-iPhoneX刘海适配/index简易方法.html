@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>iPhone X</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- <link href="css/style.css" rel="stylesheet"> -->
+  <style>
+    .box {
+      max-width: 414px;
+      height: 480px;
+      border: solid #000;
+      margin: auto;
+      overflow: auto;
+    }
+
+    .shape {
+      float: left;
+      width: 30px;
+      height: 180px;
+      margin-top: 150px;
+      -webkit-shape-outside: url(liu-outside.png);
+      shape-outside: url(liu-outside.png);
+      transition: margin-top .15s;
+    }
+
+    .liuhai {
+      width: 24px;
+      height: 180px;
+      background: url(liuhai.png) no-repeat left center;
+      position: absolute;
+      margin-top: 150px;
+    }
+
+    .content ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+
+    .content li {
+      border-bottom: 1px solid #eee;
+      padding: .5em;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div id="box" class="box">
+    <i id="shape" class="shape"></i>
+    <i class="liuhai"></i>
+    <div class="content">
+      <ul>
+        <li>手写demo...</li>
+        <li>用于适配iPhone X的...‘刘海’...</li>
+        <li>可以再看看...时怎么回事...->
+          <a href="http://weibo.com/tv/v/FlEaYuZb0?fid=1034:68a8ce4e62e7fba6e4b54e30e21dcc08" target="_blank">观看视频</a>
+        </li>
+        <li>很简单的动效...</li>
+        <li>CSS3实现起来也很...容易...</li>
+        <li>因为...早就有...shape-outside属性...</li>
+        <li>ta可以...可以让内联元素以不规则的形状进行外部排列...</li>
+        <li>shape-outside注:</li>
+        <li>This is an experimental technology...</li>
+        <li>Check the
+          <a href="http://devdocs.io/css/shape-outside#Browser_compatibility" target="_blank">Browser compatibility table</a> carefully...</li>
+        <li>before using this in production...</li>
+        <li>这些...字母...是我摘录的...</li>
+        <li>废话有点多...</li>
+        <li>我们开始吧...</li>
+        <li>等等...</li>
+        <li>......</li>
+        <li>祝好运...</li>
+        <li>......</li>
+        <li>......</li>
+        <li>......</li>
+        <li>......</li>
+        <li>......</li>
+        <li>......</li>
+        <li>......</li>
+        <li>咦...</li>
+        <li>......</li>
+        <li>......</li>
+        <li>......</li>
+        <li>......</li>
+        <li>......</li>
+        <li>......</li>
+        <li>......</li>
+        <li>没有了...</li>
+        <li>没有了..</li>
+        <li>没有了.</li>
+        <li>......</li>
+        <li>......</li>
+        <li>......</li>
+        <li>......</li>
+        <li>......</li>
+        <li>......</li>
+        <li>你很不一样...是个...能坚持的...人...</li>
+      </ul>
+    </div>
+  </div>
+  <script>
+    var eleShape = document.getElementById('shape')
+    var eleBox = document.getElementById('box')
+
+    var funShape = function () {
+      var scrollTop = eleBox.scrollTop
+      // 滚动偏移应用在margin-top上
+      eleShape.style.marginTop = (150 + scrollTop) + 'px'
+    }
+    // 滚动时候实时改变shape形状
+    eleBox.addEventListener('scroll', funShape)
+    funShape()
+  </script>
+</body>
+
+</html>
