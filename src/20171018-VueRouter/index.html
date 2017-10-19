@@ -33,7 +33,13 @@
       }
     }
     const Bar = {
-      template: `<div>got bar~</div>`
+      template: `<div>got bar~</div>`,
+      beforeRouteEnter(to,from,next){
+        log('enter->>',this)
+      },
+      beforeRouteLeave(to,from,next){
+        log(this)
+      }
     }
     const FooChild = {
       template: `<div>foo child</div>`
@@ -57,6 +63,13 @@
 
     const router = new VueRouter({
       routes
+    })
+
+
+    router.beforeEach((to, from, next)=>{
+      next()
+    })
+    router.afterEach((to, from)=>{
     })
 
     const app = new Vue({
