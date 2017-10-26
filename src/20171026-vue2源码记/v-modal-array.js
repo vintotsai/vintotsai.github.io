@@ -1,11 +1,11 @@
 // 仿照vuejs源码对数组劫持的原理
 
-var arrayMethod = Object.create(Array.prototype)
+var arrayMethod = Object.create(Array.prototype);
 
 ['push', 'shift'].forEach(function (method) {
   Object.defineProperty(arrayMethod, method, {
     value: function () {
-      console.log('arguments->>', arguments.length)
+      console.log('arguments->>', arguments)
       var i = arguments.length
       var args = new Array(i)
       while (i--) {
