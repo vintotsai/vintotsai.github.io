@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>太极</title>
+  <style class="cp-pen-styles">
+    html,
+    body,
+    div,
+     :before,
+     :after {
+      box-sizing: border-box;
+      margin: 0;
+    }
+
+    html,
+    body {
+      height: 100%;
+    }
+
+    #taiji {
+      position: relative;
+      top: 50%;
+      left: 50%;
+      width: 200px;
+      height: 200px;
+      margin: -100px 0 0 -100px;
+      background-image: linear-gradient(0deg, black 50%, white 50%);
+      border-radius: 50%;
+      box-shadow: 5px 5px 40px #666666;
+      transition: all 6s ease-in-out;
+    }
+
+    #taiji:hover {
+      transform: rotate(3600deg);
+    }
+
+    #taiji:before,
+    #taiji:after {
+      content: "";
+      display: block;
+      position: absolute;
+      width: 50%;
+      height: 50%;
+      top: 25%;
+      border-radius: 50%;
+      border-width: 35px;
+      border-style: solid;
+    }
+
+    #taiji:before {
+      left: 0;
+      border-color: black;
+      background-color: white;
+    }
+
+    #taiji:after {
+      right: 0;
+      border-color: white;
+      background-color: black;
+    }
+  </style>
+</head>
+
+<body>
+  <div id="taiji"></div>
+</body>
+
+</html>
