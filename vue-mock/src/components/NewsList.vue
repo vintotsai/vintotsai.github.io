@@ -22,11 +22,12 @@ export default {
   },
   created() {
     this.fetchData()
+    log('_lodash->>',_)
   },
   methods: {
     fetchData() {
       axios.get("/news").then(res => {
-        console.log(res);
+        log(res);
         this.news = res.data.articles;
       });
     }
