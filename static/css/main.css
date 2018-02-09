@@ -1,0 +1,42 @@
+.page-footer .top {
+  background: #2c3e50;
+  padding: 110px 15px;
+}
+.page-footer .top .social {
+  padding-left: 0;
+  margin: 0;
+  text-align: center;
+  font-size: 2.2rem;
+}
+.page-footer .top .social li {
+  display: inline-block;
+  padding: 0 15px;
+}
+.page-footer .top .social li a {
+  color: white;
+  transition: color .3s;
+}
+.page-footer .top .social li a:hover {
+  color: #2980b9;
+}
+.page-footer .bottom {
+  background: #34495e;
+  padding: 30px 15px;
+}
+.page-footer .bottom .copyright {
+  font-size: .8rem;
+  text-align: center;
+  color: #95a5a6;
+  margin: 0;
+}
+.page-footer .bottom .copyright small {
+  color: #7f8c8d;
+}
+.page-footer .bottom .copyright a {
+  color: #7f8c8d;
+  text-decoration: underline;
+  transition: color .3s;
+}
+.page-footer .bottom .copyright a:hover {
+  color: #2980b9;
+}
