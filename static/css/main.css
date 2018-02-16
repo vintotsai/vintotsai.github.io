@@ -1,3 +1,84 @@
+.page-header {
+  position: relative;
+}
+.page-header .background {
+  width: 100%;
+  height: 550px;
+  background: black;
+  overflow: hidden;
+  position: relative;
+}
+.page-header .background img {
+  display: block;
+  width: 1920px;
+  height: 800px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-left: -960px;
+  margin-top: -400px;
+}
+.page-header .author {
+  background: #ecf0f1;
+  text-align: center;
+  padding: 0 20px 30px 20px;
+}
+.page-header .author .head {
+  display: inline-block;
+  width: 130px;
+  height: 130px;
+  border-radius: 50%;
+  padding: 3px;
+  background: #fff;
+  box-shadow: 0 0 5px #95a5a6;
+  position: relative;
+  top: -68px;
+  opacity: 0;
+  transform: translateY(-20px);
+  transition: all 0.4s;
+}
+.page-header .author .head img {
+  width: 100%;
+  height: 100%;
+  display: block;
+  border-radius: 50%;
+}
+.page-header .author .name, .page-header .author .signature {
+  position: relative;
+  margin: 0;
+  opacity: 0;
+  transform: translateY(-20px);
+  transition: all 0.4s;
+}
+.page-header .author .name {
+  font-size: 1.3rem;
+  color: #2c3e50;
+  top: -50px;
+}
+.page-header .author .signature {
+  font-size: .95rem;
+  color: #7f8c8d;
+  top: -35px;
+}
+
+@media screen and (max-width: 1440px) {
+  .page-header .background {
+    height: 450px;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .page-header .background {
+    height: 350px;
+  }
+  .page-header .background img {
+    width: 1200px;
+    height: 500px;
+    margin-left: -600px;
+    margin-top: -250px;
+  }
+}
+
+
 /* footer */
 .page-footer .top {
   background: #2c3e50;
